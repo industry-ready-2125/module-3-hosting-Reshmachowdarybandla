@@ -1,51 +1,40 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Amazon sign in</title>
-    <style>
-        .text {
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .align {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-Login</title>
+    <link rel="icon" href="amazonicon.png" />
+    <link rel="stylesheet" href="page02.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-    <form class="align">
-        <div>
-            <label for="username">Username &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</label>
-            <input type="text" placeholder="Enter username" id="uname" onfocusout="validateUname()"><br><br>
-            <label for="password">Password &nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="password" placeholder="Enter password" id="pwd" onfocusout="validatePassword()"><br><br>
-            <label for="password">Confirm Password &nbsp;</label>
-            <input type="password" placeholder="Re-Enter password" id="cpwd" onfocusout="validateCpassword()"><br><br>
-            <label for="email-id">Email-id
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" placeholder="Enter email" id="email" onfocusout="validateEmail()"><br><br>
-            <label for="mobile">Mobile Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" placeholder="Enter mobile" id="mobile" onfocusout="validateMobile()"><br><br>
-            <label for="dob">Date of Birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="date" placeholder="Enter Date of Birth"><br><br>
-            <label
-                for="address">Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="textarea" placeholder="Enter Address"><br><br>
-            <label for="gender">Gender</label><br>
-            <input type="radio" id="male" value="male" name="gender">Male</input>
-            <input type="radio" id="female" value="female" name="gender">Female</input><br><br>
-            <button type="submit"
-                style="background-color:coral; border: none; font-size: 30px; color: white">&nbsp;Register&nbsp;</button>
-        </div>
-
-
-    </form>
+    <div class="wrapper">
+        <form action="">
+            <div style="align-items: center; padding-left: 100px;">
+                <img src="Amazon-Logo-1024x426-1.webp" height="40px" width="90px">
+            </div>
+            <h4>Create account</h4>
+            <div class="input-box">
+                <input type="text" placeholder="yourname" required>
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="mobile number" required>
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock' ></i>
+            </div>
+            <!-- <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forget password?</a>
+            </div> -->
+            <button type="submit" class="btn">verify mobile number</button>
+            <!-- <div class="register-link">
+                <p>New To Amazon..<a href="#">Sign Up</a></p>
+            </div> -->
+        </form>
 </body>
-
 </html>
